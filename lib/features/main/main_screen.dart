@@ -24,6 +24,7 @@ class _MainScreenState extends State<MainScreen> {
       body: screens[currentIndex],
 
       bottomNavigationBar: BottomNavigationBar(
+
         currentIndex: currentIndex,
 
         onTap: (index) {

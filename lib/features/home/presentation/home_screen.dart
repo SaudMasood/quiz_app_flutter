@@ -23,16 +23,34 @@ class _HomeScreenState extends State<HomeScreen> {
       'icon': Icons.flutter_dash,
     },
     {
-      'title': 'Math Quiz',
-      'category': 'Math',
+      'title': 'Dart Quiz',
+      'category': 'Dart',
       'subtitle': '10 Questions',
-      'icon': Icons.calculate,
+      'icon': Icons.code,
     },
     {
-      'title': 'Web Quiz',
+      'title': 'Web Development Quiz',
       'category': 'Web Development',
       'subtitle': '10 Questions',
       'icon': Icons.web,
+    },
+    {
+      'title': 'Database Quiz',
+      'category': 'Database',
+      'subtitle': '10 Questions',
+      'icon': Icons.storage,
+    },
+    {
+      'title': 'Programming Quiz',
+      'category': 'Programming',
+      'subtitle': '10 Questions',
+      'icon': Icons.computer,
+    },
+    {
+      'title': 'Computer Science Quiz',
+      'category': 'Computer Science',
+      'subtitle': '10 Questions',
+      'icon': Icons.school,
     },
   ];
 
@@ -155,103 +173,103 @@ class _HomeScreenState extends State<HomeScreen> {
     );
 
     await databaseHelper.insertQuestion(
-      'Math',
-      'What is 5 + 5?',
-      '8',
-      '9',
-      '10',
-      '11',
-      '10',
+      'Dart',
+      'Which keyword is used to create a variable in Dart?',
+      'var',
+      'variable',
+      'let',
+      'define',
+      'var',
     );
 
     await databaseHelper.insertQuestion(
-      'Math',
-      'What is 10 - 4?',
-      '5',
-      '6',
-      '7',
-      '8',
-      '6',
+      'Dart',
+      'Which keyword creates a value that cannot be changed?',
+      'var',
+      'final',
+      'dynamic',
+      'late',
+      'final',
     );
 
     await databaseHelper.insertQuestion(
-      'Math',
-      'What is 6 × 3?',
-      '15',
-      '18',
-      '21',
-      '24',
-      '18',
+      'Dart',
+      'Which keyword is used for compile-time constants?',
+      'final',
+      'var',
+      'const',
+      'static',
+      'const',
     );
 
     await databaseHelper.insertQuestion(
-      'Math',
-      'What is 20 ÷ 4?',
-      '4',
-      '5',
-      '6',
-      '8',
-      '5',
+      'Dart',
+      'Which symbol is used for nullable variables?',
+      '!',
+      '?',
+      '#',
+      '&',
+      '?',
     );
 
     await databaseHelper.insertQuestion(
-      'Math',
-      'What is 7 + 8?',
-      '13',
-      '14',
-      '15',
-      '16',
-      '15',
+      'Dart',
+      'Which collection stores ordered values?',
+      'Map',
+      'Set',
+      'List',
+      'Object',
+      'List',
     );
 
     await databaseHelper.insertQuestion(
-      'Math',
-      'What is 12 - 7?',
-      '4',
-      '5',
-      '6',
-      '7',
-      '5',
+      'Dart',
+      'Which collection stores key-value pairs?',
+      'List',
+      'Set',
+      'Map',
+      'Array',
+      'Map',
     );
 
     await databaseHelper.insertQuestion(
-      'Math',
-      'What is 9 × 2?',
-      '16',
-      '18',
-      '20',
-      '21',
-      '18',
+      'Dart',
+      'Which keyword defines a class?',
+      'object',
+      'class',
+      'model',
+      'type',
+      'class',
     );
 
     await databaseHelper.insertQuestion(
-      'Math',
-      'What is 36 ÷ 6?',
-      '4',
-      '5',
-      '6',
-      '7',
-      '6',
+      'Dart',
+      'Which keyword is used to return a value from a function?',
+      'send',
+      'return',
+      'output',
+      'value',
+      'return',
     );
 
     await databaseHelper.insertQuestion(
-      'Math',
-      'What is 10% of 100?',
-      '5',
-      '10',
-      '15',
-      '20',
-      '10',
+      'Dart',
+      'Which operator is used for null-aware access?',
+      '?.',
+      '!!',
+      '::',
+      '??',
+      '?.',
     );
 
     await databaseHelper.insertQuestion(
-      'Math',
-      'What is the square of 5?',
-      '10',
-      '15',
-      '20',
-      '25',
-      '25',
+      'Dart',
+      'Which keyword is used to handle exceptions?',
+      'check',
+      'try',
+      'catch-only',
+      'error',
+      'try',
     );
 
     await databaseHelper.insertQuestion(
@@ -353,6 +371,306 @@ class _HomeScreenState extends State<HomeScreen> {
       'background-text',
       'background-color',
     );
+
+    await databaseHelper.insertQuestion(
+      'Database',
+      'What does SQL stand for?',
+      'Structured Query Language',
+      'Simple Query Language',
+      'System Query Language',
+      'Standard Question Language',
+      'Structured Query Language',
+    );
+
+    await databaseHelper.insertQuestion(
+      'Database',
+      'Which command is used to retrieve data?',
+      'INSERT',
+      'UPDATE',
+      'SELECT',
+      'DELETE',
+      'SELECT',
+    );
+
+    await databaseHelper.insertQuestion(
+      'Database',
+      'Which command adds new data?',
+      'INSERT',
+      'SELECT',
+      'DELETE',
+      'DROP',
+      'INSERT',
+    );
+
+    await databaseHelper.insertQuestion(
+      'Database',
+      'Which command modifies existing data?',
+      'CHANGE',
+      'UPDATE',
+      'MODIFY',
+      'EDIT',
+      'UPDATE',
+    );
+
+    await databaseHelper.insertQuestion(
+      'Database',
+      'Which command removes data?',
+      'REMOVE',
+      'CLEAR',
+      'DELETE',
+      'DROP',
+      'DELETE',
+    );
+
+    await databaseHelper.insertQuestion(
+      'Database',
+      'What uniquely identifies a row?',
+      'Foreign Key',
+      'Primary Key',
+      'Index',
+      'Column',
+      'Primary Key',
+    );
+
+    await databaseHelper.insertQuestion(
+      'Database',
+      'Which database is used by your Flutter quiz app?',
+      'MongoDB',
+      'MySQL',
+      'SQLite',
+      'Oracle',
+      'SQLite',
+    );
+
+    await databaseHelper.insertQuestion(
+      'Database',
+      'What does CRUD stand for?',
+      'Create Read Update Delete',
+      'Create Run Update Data',
+      'Copy Read Update Delete',
+      'Create Remove Use Data',
+      'Create Read Update Delete',
+    );
+
+    await databaseHelper.insertQuestion(
+      'Database',
+      'Which SQL command creates a table?',
+      'MAKE TABLE',
+      'CREATE TABLE',
+      'NEW TABLE',
+      'ADD TABLE',
+      'CREATE TABLE',
+    );
+
+    await databaseHelper.insertQuestion(
+      'Database',
+      'Which SQL command is used to remove a table?',
+      'DELETE TABLE',
+      'REMOVE TABLE',
+      'DROP TABLE',
+      'CLEAR TABLE',
+      'DROP TABLE',
+    );
+
+    await databaseHelper.insertQuestion(
+      'Programming',
+      'What is a variable?',
+      'A storage location for data',
+      'A computer',
+      'A database',
+      'An operating system',
+      'A storage location for data',
+    );
+
+    await databaseHelper.insertQuestion(
+      'Programming',
+      'What does OOP stand for?',
+      'Object Oriented Programming',
+      'Object Operating Program',
+      'Online Object Programming',
+      'Open Oriented Process',
+      'Object Oriented Programming',
+    );
+
+    await databaseHelper.insertQuestion(
+      'Programming',
+      'Which concept hides internal implementation details?',
+      'Inheritance',
+      'Encapsulation',
+      'Polymorphism',
+      'Looping',
+      'Encapsulation',
+    );
+
+    await databaseHelper.insertQuestion(
+      'Programming',
+      'Which concept allows a class to use another class properties?',
+      'Inheritance',
+      'Encapsulation',
+      'Abstraction',
+      'Iteration',
+      'Inheritance',
+    );
+
+    await databaseHelper.insertQuestion(
+      'Programming',
+      'Which structure repeats code?',
+      'Variable',
+      'Loop',
+      'Class',
+      'Object',
+      'Loop',
+    );
+
+    await databaseHelper.insertQuestion(
+      'Programming',
+      'Which loop checks its condition before execution?',
+      'do-while',
+      'while',
+      'repeat',
+      'foreach-only',
+      'while',
+    );
+
+    await databaseHelper.insertQuestion(
+      'Programming',
+      'What is a function?',
+      'A reusable block of code',
+      'A database',
+      'A variable only',
+      'An operating system',
+      'A reusable block of code',
+    );
+
+    await databaseHelper.insertQuestion(
+      'Programming',
+      'What is debugging?',
+      'Writing documentation',
+      'Finding and fixing errors',
+      'Creating a database',
+      'Installing software',
+      'Finding and fixing errors',
+    );
+
+    await databaseHelper.insertQuestion(
+      'Programming',
+      'What does API stand for?',
+      'Application Programming Interface',
+      'Application Program Internet',
+      'Advanced Programming Input',
+      'Application Process Interface',
+      'Application Programming Interface',
+    );
+
+    await databaseHelper.insertQuestion(
+      'Programming',
+      'What is an algorithm?',
+      'A step-by-step solution',
+      'A programming language',
+      'A database',
+      'A computer',
+      'A step-by-step solution',
+    );
+
+    await databaseHelper.insertQuestion(
+      'Computer Science',
+      'What does CPU stand for?',
+      'Central Processing Unit',
+      'Computer Personal Unit',
+      'Central Program Utility',
+      'Computer Processing User',
+      'Central Processing Unit',
+    );
+
+    await databaseHelper.insertQuestion(
+      'Computer Science',
+      'What does RAM stand for?',
+      'Random Access Memory',
+      'Read Access Memory',
+      'Rapid Application Memory',
+      'Random Application Module',
+      'Random Access Memory',
+    );
+
+    await databaseHelper.insertQuestion(
+      'Computer Science',
+      'Which is an operating system?',
+      'Flutter',
+      'Windows',
+      'Dart',
+      'HTML',
+      'Windows',
+    );
+
+    await databaseHelper.insertQuestion(
+      'Computer Science',
+      'Which device is used to input text?',
+      'Monitor',
+      'Printer',
+      'Keyboard',
+      'Speaker',
+      'Keyboard',
+    );
+
+    await databaseHelper.insertQuestion(
+      'Computer Science',
+      'Which device displays visual output?',
+      'Keyboard',
+      'Mouse',
+      'Monitor',
+      'Microphone',
+      'Monitor',
+    );
+
+    await databaseHelper.insertQuestion(
+      'Computer Science',
+      'What does URL stand for?',
+      'Uniform Resource Locator',
+      'Universal Resource Link',
+      'User Resource Locator',
+      'Uniform Reference Link',
+      'Uniform Resource Locator',
+    );
+
+    await databaseHelper.insertQuestion(
+      'Computer Science',
+      'What does HTTP stand for?',
+      'HyperText Transfer Protocol',
+      'High Transfer Text Protocol',
+      'Hyper Tool Transfer Process',
+      'Home Text Transfer Protocol',
+      'HyperText Transfer Protocol',
+    );
+
+    await databaseHelper.insertQuestion(
+      'Computer Science',
+      'Which number system uses only 0 and 1?',
+      'Decimal',
+      'Binary',
+      'Hexadecimal',
+      'Octal',
+      'Binary',
+    );
+
+    await databaseHelper.insertQuestion(
+      'Computer Science',
+      'Which data structure follows FIFO?',
+      'Stack',
+      'Queue',
+      'Tree',
+      'Graph',
+      'Queue',
+    );
+
+    await databaseHelper.insertQuestion(
+      'Computer Science',
+      'Which data structure follows LIFO?',
+      'Queue',
+      'Array',
+      'Stack',
+      'Graph',
+      'Stack',
+    );
   }
 
   @override
@@ -361,11 +679,22 @@ class _HomeScreenState extends State<HomeScreen> {
       appBar: const CustomAppBar(
         title: 'Quiz App',
       ),
+
       body: Padding(
         padding: const EdgeInsets.all(12),
+
         child: Column(
           children: [
-            const SizedBox(height: 30),
+            // SizedBox(height: 14),
+              Flexible(
+                child: Image.asset('assets/images/home.png'
+                ,
+                height: 150,
+                  width: 180,
+                  fit: BoxFit.cover,
+                ),
+              ),
+            const SizedBox(height: 20),
 
             Text(
               'Take a Quiz',
@@ -375,17 +704,24 @@ class _HomeScreenState extends State<HomeScreen> {
             const SizedBox(height: 20),
 
             Expanded(
+              flex: 3,
+
               child: ListView.builder(
                 itemCount: categories.length,
+
                 itemBuilder: (context, index) {
                   final category = categories[index];
 
                   return Padding(
-                    padding: const EdgeInsets.only(bottom: 16),
+                    padding: const EdgeInsets.only(
+                      bottom: 16,
+                    ),
+
                     child: QuizCategoryCard(
                       title: category['title'],
                       subtitle: category['subtitle'],
                       icon: category['icon'],
+
                       onTap: () {
                         Navigator.push(
                           context,

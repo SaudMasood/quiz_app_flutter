@@ -16,38 +16,54 @@ class ResultScreen extends StatelessWidget {
       appBar: const CustomAppBar(
         title: 'Quiz Result',
       ),
-      body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            Text(
-              '${result.category} Quiz',
-              style: const TextStyle(
-                fontSize: 24,
-                fontWeight: FontWeight.bold,
-              ),
+      body: Column(
+        children: [
+          Flexible(
+            child: Image.asset("assets/images/result.png"
+              ,height: 190,
+              width: 190,
+              fit: BoxFit.cover,
             ),
+          ),
 
-            const SizedBox(height: 20),
+          Center(
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
 
-            Text(
-              '${result.score} / ${result.totalQuestions}',
-              style: const TextStyle(
-                fontSize: 40,
-                fontWeight: FontWeight.bold,
-              ),
+
+
+                SizedBox(height: 20,),
+                Text(
+                  '${result.category} Quiz',
+                  style: const TextStyle(
+                    fontSize: 24,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+
+                const SizedBox(height: 20),
+
+                Text(
+                  '${result.score} / ${result.totalQuestions}',
+                  style: const TextStyle(
+                    fontSize: 40,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+
+                const SizedBox(height: 10),
+
+                const Text(
+                  'Your Score',
+                  style: TextStyle(
+                    fontSize: 18,
+                  ),
+                ),
+              ],
             ),
-
-            const SizedBox(height: 10),
-
-            const Text(
-              'Your Score',
-              style: TextStyle(
-                fontSize: 18,
-              ),
-            ),
-          ],
-        ),
+          ),
+        ],
       ),
     );
   }
