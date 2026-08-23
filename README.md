@@ -2,9 +2,9 @@
 
 # 🏆 QuizWins
 
-### 🎯 Test Your Knowledge. Track Your Score. Keep Improving.
+### 🎯 Flutter Quiz Application
 
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&pause=1000&color=6C63FF&center=true&vCenter=true&width=700&lines=Welcome+to+QuizWins!;Challenge+Your+Knowledge;Take+Quizzes+%7C+Track+Scores+%7C+View+History;Built+with+Flutter+%26+BLoC" alt="Typing animation" />
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&pause=1000&color=6C63FF&center=true&vCenter=true&width=700&lines=Welcome+to+QuizWins!;Test+Your+Knowledge;Take+Quizzes+%7C+Track+Scores+%7C+View+History;Built+with+Flutter+%26+BLoC" alt="Typing animation" />
 
 <br/>
 
@@ -17,80 +17,70 @@
 
 ---
 
-## 📱 About QuizWins
+## 📱 About the Project
 
-**QuizWins** is a Flutter-based quiz application designed to provide a simple, interactive, and enjoyable way to test knowledge across different categories.
+**QuizWins** is a Flutter-based Quiz Application developed as part of my **Week 3 Flutter Internship Task at Owasoft Technologies Pvt. Ltd.**
 
-The application includes quiz categories, multiple-choice questions, answer validation, score calculation, result display, and quiz history stored locally using SQLite.
+The project focuses on building a functional quiz application with multiple-choice questions, answer selection, score calculation, result management, and quiz history.
 
-The project was also used to practice a clean Flutter feature structure and understand **BLoC state management** in a real application.
+During this week, I also practiced **BLoC state management**, database integration with SQLite, model classes, events, states, and separation of UI from application logic.
+
+---
+
+## 🎯 Week 3 Internship Objectives
+
+The main objectives of this project were:
+
+- Build a functional Flutter Quiz Application
+- Work with local SQLite database
+- Store and retrieve quiz questions
+- Implement quiz categories
+- Handle multiple-choice answers
+- Calculate quiz scores
+- Store completed quiz results
+- Display quiz history
+- Practice BLoC state management
+- Understand Events, States, and BLoC
+- Improve Flutter project structure
+- Create reusable UI components
 
 ---
 
 ## ✨ Features
 
-- 🏠 Clean and simple Home Screen
+- 🏠 Home Screen with quiz categories
 - 🎯 Multiple quiz categories
-- ❓ Multiple-choice questions
-- ✅ Instant correct/wrong answer feedback
-- 📊 Question progress tracking
+- ❓ 10 questions per quiz
+- ✅ Answer selection and validation
+- 📊 Question progress
 - 🧮 Automatic score calculation
-- 🏆 Result Screen after completing a quiz
+- 🏆 Result Screen
 - 🕘 Quiz History
-- 💾 Local SQLite database
-- 🔄 BLoC-based state management
-- 🎨 Reusable widgets and centralized styling
-- 🖼️ Custom application images and visual assets
-- 📱 Responsive Flutter UI
+- 💾 SQLite local database
+- 🔄 BLoC state management
+- 🎨 Custom UI components
+- 🖼️ Custom visual assets
+- 📱 Clean feature-based project structure
 
 ---
 
-## 🧠 Quiz Flow
+## 🧩 BLoC State Management
+
+For this project, I practiced separating the application into:
 
 ```text
-                    ┌─────────────────┐
-                    │   QuizWins App  │
-                    └────────┬────────┘
-                             │
-                             ▼
-                    ┌─────────────────┐
-                    │   Home Screen   │
-                    └────────┬────────┘
-                             │
-                    Select Category
-                             │
-                             ▼
-                    ┌─────────────────┐
-                    │   Quiz Screen   │
-                    └────────┬────────┘
-                             │
-                       Select Answer
-                             │
-                             ▼
-                    ┌─────────────────┐
-                    │ Check Answer    │
-                    │ Correct / Wrong │
-                    └────────┬────────┘
-                             │
-                         Next Question
-                             │
-                             ▼
-                    ┌─────────────────┐
-                    │  Finish Quiz    │
-                    └────────┬────────┘
-                             │
-                             ▼
-                    ┌─────────────────┐
-                    │  Save Result    │
-                    │   SQLite DB     │
-                    └────────┬────────┘
-                             │
-                             ▼
-                    ┌─────────────────┐
-                    │  Result Screen  │
-                    └────────┬────────┘
-                             │
-                             ▼
-                    ┌─────────────────┐
-                    │  History Screen │
-                    └─────────────────┘
+UI
+ │
+ │ User Action
+ ▼
+Event
+ │
+ ▼
+BLoC
+ │
+ │ Business Logic
+ ▼
+State
+ │
+ ▼
+UI Update
